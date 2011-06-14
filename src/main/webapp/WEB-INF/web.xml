@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd"
+	version="2.5">
+
+	<listener>
+		<listener-class>se.aasplund.spring.web.bootstrap.DynamicContextLoaderListener</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>dynamicContextConfigLocation</param-name>
+		<param-value>dynamic-spring-config.xml</param-value>
+	</context-param>
+
+</web-app>
